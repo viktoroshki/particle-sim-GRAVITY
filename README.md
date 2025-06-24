@@ -7,4 +7,11 @@ The V1 version has a form of continuos collision detection (CCD), which pretty m
 
 In the V2 version I changed it so that it would detect if the particles are touching by simply seeing if they are overlapping, solved all the bugs but in the future if I want to render loads of particles this may not be fully viable, but it works for a smaller amount of particles. I also made the border of where the particles would get deleted follow where the centre of mass is. I also added a feature in this one where you can speed up the simulation by changing something with deltaTime, I don't fully understand how that works but that how chatGPT did it so I am asuming its fine, and also chatGPT coded a script for the camera so by pressing c, you can attach the camera to where the centre of mass is.
 
-Future (probably won't ever do this): add extra features liek if the particles are fast enoguht they split into more smaller particles when crashing into eachother instead of jsut combining; add the Barnes-Hut algorithm so I can simulate mroe particles.
+Future (probably won't ever do this): add extra features liek if the particles are fast enoguht they split into more smaller particles when crashing into eachother instead of jsut combining; use more of the CPU/GPU; add the Barnes-Hut algorithm so I can simulate mroe particles.
+
+How to use:
+Drop the camera script onto the camera,
+Drop the particle simulator script and the particle spawner script onto an empty object,
+Create a sphere (ideally 1x1 scale but I don't think that will matter) (you can also name it particle),
+Where an object needs to be attached to a script in the Inspector tab attach the sphere object, if a script needs to be attached, attach the particle simulator script,
+Play around with the settings and do whatever works.
